@@ -12,9 +12,8 @@ class Pokemon
   end
   
   def self.save
-    def self.save
     sql = <<-SQL
-      INSERT INTO students (name, grade) 
+      INSERT INTO pokemons (name, grade) 
       VALUES (?, ?)
     SQL
 
