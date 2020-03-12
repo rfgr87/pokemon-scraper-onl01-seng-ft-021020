@@ -2,10 +2,10 @@
 DB = {:conn => SQLite3::Database.new("db/pokemon.db")}
 
 class Pokemon
-  attr_accessor :name, :type
+  attr_accessor :name, :type, :db
   attr_reader :id
   
-  def initialize(id=nil, name, type)
+  def initialize(id=nil, name, type, db)
     @id = id
     @name = name 
     @type = type
